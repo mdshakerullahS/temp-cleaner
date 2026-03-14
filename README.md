@@ -77,20 +77,6 @@ By default, the script will:
 
 ---
 
-# How It Works
-
-1. Detects system temporary directories based on the OS (Windows, Linux, macOS).
-2. Recursively scans directories using `os.scandir`.
-3. Calculates file age using the last modification timestamp.
-4. Tracks **total size scanned** and identifies old files.
-5. Uses `ThreadPoolExecutor` for concurrent file processing.
-6. Performs deletion after confirmation (unless `--auto` is used).
-7. Logs results and prints a cleanup summary.
-8. Removes empty directories after files are deleted.
-9. **Skips cleaning the root directory** to avoid catastrophic deletion.
-
----
-
 # Command Line Options
 
 ## Set File Age Threshold
@@ -209,6 +195,20 @@ The log includes:
 - Skipped files
 - Errors
 - Cleanup summaries
+
+---
+
+# How It Works
+
+1. Detects system temporary directories based on the OS (Windows, Linux, macOS).
+2. Recursively scans directories using `os.scandir`.
+3. Calculates file age using the last modification timestamp.
+4. Tracks **total size scanned** and identifies old files.
+5. Uses `ThreadPoolExecutor` for concurrent file processing.
+6. Performs deletion after confirmation (unless `--auto` is used).
+7. Logs results and prints a cleanup summary.
+8. Removes empty directories after files are deleted.
+9. **Skips cleaning the root directory** to avoid catastrophic deletion.
 
 ---
 
