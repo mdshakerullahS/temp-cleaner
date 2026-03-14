@@ -225,8 +225,8 @@ You are free to use, modify, and distribute this software with proper attributio
 **Md Shakerullah Sourov**\
 <small>Full-Stack Web Developer</small>
 
+- Portfolio: https://shakerullah.vercel.app
 - LinkedIn: https://linkedin.com/in/mdshakerullah
-
 - Email: sourovmdshakerullah@gmail.com
 
 ---
